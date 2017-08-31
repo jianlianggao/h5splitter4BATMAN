@@ -2,8 +2,8 @@ Package: h5split4batman
 Version: 1.0
 Author: Jianliang Gao
 Maintainer: Jianliang Gao <j.gao@imperial.ac.uk>
-Title: Bruker to hdf
-Description: Convert zipped Bruker NMR raw data into hdf (.h5) file.
+Title: h5 splitter for BATMAN
+Description: Split hdf (.h5) file and save into .txt file with specified number of spectra for BATMAN use.
 Depends:
     R (>= 2.15.0),
     h5
