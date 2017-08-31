@@ -29,5 +29,5 @@ if(!("inputData" %in% names(opt))) {
 library(h5)
 library(h5split4batman)
 cat("start splitting....\n")
-h5split4batman(filename=opt$inputData, spec_interval=opt$interval)
+h5split4batman(BrukerZippedFile=opt$inputData, spec_interval=opt$interval)
 

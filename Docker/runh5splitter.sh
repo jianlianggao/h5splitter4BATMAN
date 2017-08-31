@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /usr/local/bin
-Rscript --vanilla --default-packages=methods,stats,utils runh5split4batman.R -i $1 -t $2
+
+Rscript --vanilla --default-packages=methods,stats,utils /usr/local/bin/runh5split4batman.R -i $1 -t $2
