@@ -5,7 +5,9 @@ h5split4batman<-function(filename, spec_interval)
   require(h5)
   nmr_fileh5<-h5file(filename)
   total_spec<-dim(nmr_fileh5["nmr/meta"][])[2]-1
+  spec_interval<-as.numeric(spec_interval)
   number_files<-floor(total_spec/spec_interval)
+
   for (ii in seq(1, number_files)){
     split_range<-c(1, seq((ii-1)*spec_interval+2, ii*spec_interval+1))
     nmr_spec<-nmr_fileh5["nmr/data"][,split_range]
